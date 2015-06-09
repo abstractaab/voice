@@ -71,6 +71,15 @@ Products.attachSchema(new SimpleSchema({
   body: orion.attribute('summernote', {
       label: 'Body'
   }),
+
+  gallery: {
+    type: [Object],
+    optional: true,
+  },
+  "gallery.$.image": orion.attribute('file', {
+      label: 'Upload File',
+      optional: true
+  }),
   /**
    * This attribute sets the user id of the user that created 
    * this post automatically.

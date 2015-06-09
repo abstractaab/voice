@@ -1,0 +1,20 @@
+<template name="inspiration">
+	<div class="container" style="margin-top: 75px;">
+		<h1>Inspiration</h1>
+		<div class="content">
+			<div class="row">
+				{{# each images }}
+					{{> inspirationPost }}
+				{{/ each }}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="inspirationPost">
+	<div class="col-md-3">
+		<div class="CoverImage FlexEmbed FlexEmbed--4by3"
+		     style="background-image:url({{image.url}})"
+		></div>
+	</div>
+</template>

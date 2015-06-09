@@ -7,6 +7,12 @@ Meteor.publish('products', function () {
 Meteor.publish('posts', function () {
   return Posts.find();
 });
+Meteor.publish('resellers', function () {
+  return Resellers.find();
+});
+Meteor.publish('inspiration', function () {
+  return Inspiration.find();
+});
 
 /**
  * Publish posts with all the creators profiles

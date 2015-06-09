@@ -15,7 +15,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="/">Voice</a>
+          <a class="navbar-brand" href="/"><img src="/logo_white.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -23,6 +23,8 @@
             {{# each pages }}
               <li><a href="{{path}}">{{title}}</a></li>
             {{/each}}
+            <li><a href="{{pathFor 'inspiration'}}">Inspiration</a></li>
+            <li><a href="http://www.iremobel.se/contact/?_locale=en">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -30,7 +32,7 @@
 </template>
 
 <template name="footer">
-
+  asd
 </template>	
 
 <template name="loading">

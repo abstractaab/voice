@@ -8,6 +8,10 @@ Router.route('/', {
 
 });
 
+Router.route('/inspiration', {
+	name: 'inspiration',
+	layoutTemplate: 'layout'
+});
 Router.route('/products', {
 	name: 'products',
 	layoutTemplate: 'layout'
